@@ -1,14 +1,38 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
     <title>Tarjeta de crédito válida</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css" type="text/css" />
   </head>
   <body>
-    <header>pruebas</header>
-    <main></main>
-    <footer></footer>
+    <header>
+
+    </header>
+    <main>
+      <div id="one">
+        <h1>CARD CHECK</h1>
+        <p>"Utiliza esta aplicacion para validar el numero de tus tarjetas de credito o debito"</p><br>
+        <p>"Puedes elegir entre Visa o Mastercad"</p>
+        <button type="button"  id="check1">visa</button>
+        <button type="button"  id="check2">mastercard</button>
+      </div>
+
+      <div id="two" class="ocultar">
+        <h1>CARD CHECK</h1>
+        <p>"Elija el tipo de tarjeta, visa o mastercad"</p>
+        <input type ="text" id="play" maxlength="16" required autocomplete="off" onkeypress="return (event.charCode >= 48 && event.charCode <= 57)" placeholder="coloca tu numero de tarjeta">
+        <button type="button" id="check3">CHECK</button>
+      </div>
+
+      <div id="three" class="ocultar">
+        <div id="mascara"></div>
+       <br> <div id="validation"></div> <br>
+      </div>
+    </main>
+    <footer>
+
+    </footer>
     <script src="index.js" type="module"></script>
   </body>
 </html>

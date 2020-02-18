@@ -1,0 +1,33 @@
+body {
+  text-align: center;
+  width: 1200px;
+  padding: 10px;
+  margin: 15px;
+  position: absolute;
+  height: 654px;
+
+  background: #D3C8F0;
+}
+
+h1{
+
+  font-size: 35px;
+  color: rgb(199, 47, 245);
+  background-color:rgb(238, 229, 241);
+  border: 2px solid rgb(48, 3, 3);
+  margin: 2em 1em 1em 1em;
+}
+
+p{
+
+  font-weight: bold;
+  font-size: 20px;
+  color: rgb(112, 26, 26);
+}
+button{
+ padding: 2px
+}
+
+.ocultar {
+ display: none;
+}
