@@ -34,7 +34,7 @@ boton3.addEventListener("click",() => {
         score.textContent="VALID";
         score.style.display="block";
       }else{
-        score.textContent="INAVILD";
+        score.textContent="INVALID";
         score.style.display="block";
       }
     }else{
