@@ -21,18 +21,27 @@ boton2.addEventListener("click",() => {
 let boton3 = document.getElementById("check3");
 boton3.addEventListener("click",() => {
   tercera.style.display = "block";
-  segunda.style.display = "block";
-  let creditCardNumber = document.getElementById("play").value;
-  let output = validator.isValid(creditCardNumber);
-  let mask = validator.maskify(creditCardNumber);
-  let score = document.getElementById("validation");
-  let hola = document.getElementById("mascara")
-  hola.textContent=mask;
-  if (output==true){
-    score.textContent="Valid";
-    score.style.display="block";
-  }else{
-    score.textContent="Invalid";
-    score.style.display="block";
-  }
+  segunda.style.display = "none";
+
+    let creditCardNumber = document.getElementById("play").value;
+    if(creditCardNumber!=""){
+    let output = validator.isValid(creditCardNumber);
+    let mask = validator.maskify(creditCardNumber);
+    let score = document.getElementById("validation");
+    let cover = document.getElementById("masked");
+    cover.textContent=mask;
+      if (output==true){
+        score.textContent="VALID";
+        score.style.display="block";
+      }else{
+        score.textContent="INAVILD";
+        score.style.display="block";
+      }
+    }else{
+    alert("Por favor ingrese un número de tarjeta");
+     segunda.style.display = "block";
+     primera.style.display = "none";
+     tercera.style.display = 'none';
+    }
+
 })

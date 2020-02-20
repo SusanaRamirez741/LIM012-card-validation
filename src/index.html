@@ -6,32 +6,39 @@
     <link rel="stylesheet" href="style.css" type="text/css" />
   </head>
   <body>
-    <header>
-
+    <header class="header">
+      <h2>LUPITA'S BAKERY</h2>
     </header>
     <main>
+      <div  class="box1">
       <div id="one">
         <h1>CARD CHECK</h1>
-        <p>"Utiliza esta aplicacion para validar el numero de tus tarjetas de credito o debito"</p><br>
-        <p>"Puedes elegir entre Visa o Mastercad"</p>
+        <p>Utiliza esta aplicación para validar el número de tus tarjetas de crédito o débito<br>Elija el tipo de tarjeta, Visa o Mastercad</p>
+        <p></p>
         <button type="button"  id="check1">visa</button>
         <button type="button"  id="check2">mastercard</button>
       </div>
 
-      <div id="two" class="ocultar">
+      <div id="two" class="hide">
         <h1>CARD CHECK</h1>
-        <p>"Elija el tipo de tarjeta, visa o mastercad"</p>
-        <input type ="text" id="play" maxlength="16" required autocomplete="off" onkeypress="return (event.charCode >= 48 && event.charCode <= 57)" placeholder="coloca tu numero de tarjeta">
+        <p>Ingrese el número de su tarjeta de crédito o débito</p>
+        <input type ="text" style="width : 250px;" id="play" maxlength="16" required autocomplete="off" onkeypress="return (event.charCode >= 48 && event.charCode <= 57)" placeholder="coloca tu numero de tarjeta">
         <button type="button" id="check3">CHECK</button>
       </div>
 
-      <div id="three" class="ocultar">
-        <div id="mascara"></div>
-       <br> <div id="validation"></div> <br>
+      <div id="three" class="hide">
+        <h1>CARD CHECK</h1>
+        <p>Estado del número de su tarjeta ingresada</p>
+        <div class="box2">
+          <div id="masked"></div><br>
+          <div id="validation"></div> <br>
+          <a href="javascript:location.reload()" class="refresh">Ingresa un nuevo número de tarjeta</a>
+        </div>
+      </div>
       </div>
     </main>
-    <footer>
-
+    <footer class="footer">
+      <h3>created by susana</h3>
     </footer>
     <script src="index.js" type="module"></script>
   </body>

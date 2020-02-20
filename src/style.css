@@ -1,33 +1,90 @@
+header{
+  /*background-image: url("fondotrivia.jpg");*/
+  background-color:rgb(188, 231, 221);
+  display:inline-block;
+  width:100%;
+  height:150px;
+  padding:3em 1em 1em 1em;
+
+}
+
+h2{
+  font-size: 40px;
+  color: rgba(175, 131, 88, 0.918);
+  margin: 1em 1em 1em 0.5em;
+}
+
 body {
   text-align: center;
-  width: 1200px;
-  padding: 10px;
-  margin: 15px;
-  position: absolute;
   height: 654px;
-
-  background: #D3C8F0;
+  background: rgb(255, 255, 255);
+  margin: 0;
+  padding:0;
 }
 
 h1{
-
-  font-size: 35px;
-  color: rgb(199, 47, 245);
-  background-color:rgb(238, 229, 241);
-  border: 2px solid rgb(48, 3, 3);
-  margin: 2em 1em 1em 1em;
+  text-align:left;
+  font-size: 30px;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-style:normal;
+  color: #A18262;
+  margin: 1em 1em 1em 0.5em;
 }
 
 p{
-
-  font-weight: bold;
+  text-align:left;
+  font-weight: 10px;
   font-size: 20px;
-  color: rgb(112, 26, 26);
+  color: rgba(161, 129, 98, 0.932);
+  padding:0px 10px 0px 10px;
 }
 button{
- padding: 2px
+ font-weight: bold;
+  width:150px;
+  height: 50px;
+  padding: 6px 15px;
+  background-color: rgba(239, 112, 127, 0.651);
+  color: rgb(255, 255, 255);
+  border-radius: 5px;
+  border: 5px inset rgba(239, 112, 127, 0.705);
+  margin: 3em 2em 1em 2em;
 }
 
-.ocultar {
+.hide {
  display: none;
+}
+
+.box1{
+   display:inline-block;
+   width:50%;
+   height:320px;
+   margin: 3em 2em 2em 2em;
+   padding: 1em 1em 1em 1em;
+   background-color: rgba(254, 220, 210, 0.932);
+   border-radius: 25px;
+}
+
+.box2{
+  font-weight: bold;
+  font-size: 20px;
+   display:inline-block;
+   width:50%;
+   height:100px;
+   padding: 2em 1em 0em 1em;
+   margin: 1em 2em 2em 2em;
+   background-color: rgba(252, 168, 195, 0.5);
+   border-radius: 10px;
+   border: 5px groove rgba(252, 168, 195, 0.705);
+}
+
+footer{
+  width:100%;
+  height:40px;
+  background-color:rgb(188, 231, 221);
+  margin: 0;
+}
+
+.refresh{
+  color: rgba(161, 129, 98, 0.932);
+  background-color: rgba(252, 168, 195, 0.938);
 }
