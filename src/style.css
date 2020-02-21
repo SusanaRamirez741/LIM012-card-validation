@@ -1,10 +1,30 @@
+body {
+  background-image: url("images/fondo.jpg");opacity:0.97;
+  text-align: center;
+  height: 654px;
+  margin: 0;
+  padding:0;
+}
+
 header{
   background-color:rgb(188, 231, 221);
   width:100%;
   height:120px;
   padding:3em 0em 1em 0em;
   margin:0;
+  position:relative;
+}
 
+.oval{
+  background-image: url("images/oval.jpg");
+  width: 338px;
+  height: 120px;
+  background-size: 120%;
+  background-repeat: no-repeat;
+  position:absolute;
+  border-radius: 100px;
+  background-position: center;
+  margin:0em 0em 2em 36.8em;
 }
 
 .barra{
@@ -15,23 +35,11 @@ header{
    background-repeat: no-repeat;
 }
 
-.input{
-  width: 190px;
-  height: 25px;
-}
-
 h2{
   font-size: 40px;
-  color: rgba(175, 131, 88, 0.918);
+  color: rgb(139, 110, 80);
   margin: 1em 1em 1em 0.5em;
-}
-
-body {
-  text-align: center;
-  height: 654px;
-  background: rgb(255, 255, 255);
-  margin: 0;
-  padding:0;
+  position: relative;
 }
 
 h1{
@@ -39,17 +47,40 @@ h1{
   font-size: 30px;
   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-style:normal;
-  color: #A18262;
+  color: rgb(139, 110, 80);
   margin: 1em 1em 1em 0.5em;
 }
 
 p{
   text-align:left;
   font-weight: 10px;
-  font-size: 20px;
-  color: rgba(161, 129, 98, 0.932);
+  font-size: 18px;
+  color: rgb(139, 110, 80);
   padding:0px 10px 0px 10px;
 }
+
+.visa{
+  background-image: url("images/visa-logo.png");
+  width:120px;
+  height:65px;
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  margin:1.5em 8em 1em 0em;
+  position: relative;
+}
+
+.mastercard{
+  background-image: url("images/mastercard-logo.png");
+  width:120px;
+  height:65px;
+  position:relative;
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  margin:1.5em 0em 1em 0em
+}
+
 button{
  font-weight: bold;
   width:150px;
@@ -60,6 +91,11 @@ button{
   border-radius: 5px;
   border: 5px inset rgba(239, 112, 127, 0.705);
   margin: 3em 2em 1em 2em;
+}
+
+.input{
+  width: 190px;
+  height: 25px;
 }
 
 .hide {
@@ -74,6 +110,7 @@ button{
    padding: 1em 1em 0em 1em;
    background-color: rgba(254, 220, 210, 0.932);
    border-radius: 25px;
+   position:relative;
 }
 
 .box2{
@@ -85,7 +122,9 @@ button{
    background-color: rgba(221, 202, 208, 0.5);
    border-radius: 10px;
    border: 5px groove rgba(154, 143, 146, 0.705);
+   position:relative;
 }
+
 
 .masked{
   font-weight: bold;
@@ -93,6 +132,7 @@ button{
 }
 
 .validation{
+  height: 25px;
   font-weight: bold;
   font-size: 20px;
   color: rgba(33, 33, 33, 0.945);
@@ -112,8 +152,8 @@ footer{
 }
 
 .refresh{
-  color: rgba(120, 105, 90, 0.932);
-  background-color: rgba(245, 235, 238, 0.938);
+  height: 15px;
+  color: rgba(68, 50, 31, 0.932);
+  background-color: rgb(250, 248, 239);
   font-size: 15px;
-
 }
