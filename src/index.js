@@ -37,6 +37,8 @@ boton3.addEventListener("click",() => {
     let cover = document.getElementById("masked");
     const valid = document.getElementById("valid");
     const invalid = document.getElementById("invalid");
+    const refresh1 = document.getElementById("refresh-valid");
+    const refresh2 = document.getElementById("refresh-invalid");
     cover.textContent=mask;
       if (output==true){
         score.textContent="VALID";
