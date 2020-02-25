@@ -4,11 +4,11 @@
 
 ## Índice
 
-* [1. Presentación del proyecto ](#1-presentación del proyecto)
+* [1. Presentación del proyecto](#1-presentación-del-proyecto)
 * [2. Resumen del proyecto](#2-resumen-del-proyecto)
 * [3. Objetivos de aprendizaje](#3-objetivos-de-aprendizaje)
-* [4. Investigación UX](#4-investigación UX)
-* [5. Interfaz de usuario UI](#5-interfaz de usuario UI)
+* [4. Investigación UX](#4-investigación-UX)
+* [5. Interfaz de usuario UI](#5-interfaz-de-usuario-UI)
 
 ***
 
