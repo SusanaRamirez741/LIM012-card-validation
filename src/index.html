@@ -2,97 +2,122 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tarjeta de crédito válida</title>
     <link rel="stylesheet" href="style.css" type="text/css" />
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab|Simonetta&display=swap" rel="stylesheet">
   </head>
   <body>
-    <header class="header">
-      <div class="welcome"></div>
-      <div class="welcome-write">
-        <h4>Bienvenidos! encuentra todo para tu fiesta de cumpleaños soñada</h4>
-      </div>
-      <div class="follow"></div>
-      <div class="oval"></div>
-      <h2>LUPITA'S BAKERY</h2>
-      <div class="barra"></div>
-      <ul id="list1">
-        <li><a href="#">HOME</a></li>
-        <li><a href="#">NOSOTROS</a></li>
-        <li><a href="#">TIENDA ONLINE</a></li>
-        <li><a href="#">SEGUIMIENTO DE TU PEDIDO</a></li>
-        <li><a href="#">CARD CHECK</a></li>
-      </ul>
-    </header>
-    <main>
-      <div class="glass"></div>
-      <div class="glass-input">
-        <input type ="text" class="input-glass" placeholder="Qué necesitas?">
-      </div>
-      <div class="container-down">
-        <div class="flex-container1">
-          <div class="cake"></div>
-          <div class="cake-price">
-            <h4>Unicorn Cake 16porc.<br>$33</h4>
+    <div class="container">
+      <header class="header">
+        <div class="container-up">
+          <div id="social-container" class="flex-container5">
+            <ul class="social">
+              <li><a href="https://es-la.facebook.com/"><img src="images/facebook.png" class="facebook" target="_blank"></a></li>
+		          <li><a href="https://www.youtube.com/"><img src="images/youtube.png" class="youtube" target="_blank"></a></li>
+		          <li><a href="https://www.pinterest.com/"><img src="images/pinterest.png" class="pinterest" target="_blank"></a></li>
+		          <li><a href="https://twitter.com/login?lang=es"><img src="images/twitter.png" class="twitter" target="_blank"></a></li>
+              <li><a href="https://www.instagram.com/?hl=es-la"><img src="images/instagram.png" class="instagram" target="_blank"></a></li>
+            </ul>
+          </div>
+          <div class="flex-container6">
+            <div class="oval"></div>
+              <h2>LUPITA'S BAKERY</h2>
+          </div>
+          <div id="welcome-container" class="flex-container7">
+            <div class="welcome"></div>
+            <div class="welcome-write">
+              <h4>Bienvenidos! encuentra todo para tu fiesta de cumpleaños soñada</h4>
+            </div>
           </div>
         </div>
-        <div class="flex-container2">
-          <div class="cupcake"></div>
-          <div class="cupcake-price">
-            <h4>Unicorn cupcakes 20unid.<br>$37</h4>
+        <div class="container-medium">
+          <div class="barra"></div>
+          <div id="list1">
+            <ul>
+              <li><a href="#">HOME</a></li>
+              <li><a href="#">NOSOTROS</a></li>
+              <li><a href="#">TIENDA ONLINE</a></li>
+              <li><a href="#">SEGUIMIENTO DE TU PEDIDO</a></li>
+              <li><a href="#">CARD CHECK</a></li>
+            </ul>
           </div>
         </div>
-        <div class="flex-container3">
-          <div class="pop"></div>
-          <div class="pop-price">
-            <h4>Unicorn cake-pop 20unid.<br>$18</h4>
+      </header>
+
+      <main>
+        <div class="container-down-1">
+          <div class="flex-container1">
+            <div class="cake"></div>
+            <div class="cake-price">
+              <h4>Unicorn Cake 16porc.<br>$33</h4>
+            </div>
+          </div>
+          <div class="flex-container2">
+            <div class="cupcake"></div>
+            <div class="cupcake-price">
+              <h4>Unicorn cupcakes 20unid.<br>$37</h4>
+            </div>
+          </div>
+          <div class="flex-container3">
+            <div class="pop"></div>
+            <div class="pop-price">
+              <h4>Unicorn cake-pop 20unid.<br>$18</h4>
+            </div>
+          </div>
+          <div class="flex-container4">
+            <div class="pay">
+              <h4>Total a pagar: </h4>
+            </div>
+            <div class="money">
+              <h4> $88 </h4>
+            </div>
           </div>
         </div>
-        <div class="flex-container4">
-          <div class="pay">
-            <h4>Total a pagar: </h4>
-          </div>
-          <div class="money">
-            <h4> $88 </h4>
+        <div class="container-down-2">
+          <div  class="box1">
+            <div id="one">
+              <h1>CARD CHECK</h1>
+              <p>Para poder efectuar el pago en nuestra tienda es necesario que valides el número de tu tarjeta de crédito o débito</p>
+              <p>Elija el tipo de tarjeta, Visa o Mastercard</p>
+              <button type="button"  id="check1" class="visa"></button>
+              <button type="button"  id="check2" class="mastercard"></button>
+            </div>
+
+            <div id="two" class="hide">
+              <h1>CARD CHECK</h1>
+              <p>Ingrese el número de su tarjeta de crédito</p>
+              <input type ="text" class="input" id="play" maxlength="16" required autocomplete="off" onkeypress="return (event.charCode >= 48 && event.charCode <= 57)" placeholder="coloca tu numero de tarjeta">
+              <button type="button" id="check3">CHECK</button>
+              <div id="visa" class="card1"></div>
+              <div id="mastercard" class="card2"></div>
+            </div>
+
+            <div id="three" class="hide">
+              <h1>CARD CHECK</h1>
+              <p>Estado del número de su tarjeta ingresada</p>
+              <div class="box2">
+                <div id="masked" class="masked"></div><br>
+                <div id="validation" class="validation"></div>
+                <div id="valid" class="valid"></div>
+                <div id="invalid" class="invalid"></div>
+                <br><a href="javascript:location.reload()" class="refresh">Ingrese un nuevo numero de tarjeta</a>
+              </div>
+            </div>
           </div>
         </div>
-       </div>
+        <div class="container-down-3">
+          <div class="glass"></div>
+          <div class="glass-input">
+            <input type ="text" class="input-glass" placeholder="Qué necesitas?">
+          </div>
+        </div>
+      </main>
+    </div>
 
-      <div  class="box1">
-       <div id="one">
-        <h1>CARD CHECK</h1>
-        <p>Para poder efectuar el pago en nuestra tienda es necesario que valides el número de tu tarjeta de crédito o débito</p>
-        <p>Elija el tipo de tarjeta, Visa o Mastercard</p>
-        <button type="button"  id="check1" class="visa"></button>
-        <button type="button"  id="check2" class="mastercard"></button>
-      </div>
-
-      <div id="two" class="hide">
-        <h1>CARD CHECK</h1>
-        <p>Ingrese el número de su tarjeta de crédito</p>
-        <input type ="text" class="input" id="play" maxlength="16" required autocomplete="off" onkeypress="return (event.charCode >= 48 && event.charCode <= 57)" placeholder="coloca tu numero de tarjeta">
-        <button type="button" id="check3">CHECK</button>
-        <div id="visa" class="card1"></div>
-        <div id="mastercard" class="card2"></div>
-      </div>
-
-      <div id="three" class="hide">
-        <h1>CARD CHECK</h1>
-        <p>Estado del número de su tarjeta ingresada</p>
-         <div class="box2">
-           <div id="masked" class="masked"></div><br>
-           <div id="validation" class="validation"></div>
-           <div id="valid" class="valid"></div>
-           <div id="invalid" class="invalid"></div>
-           <br><a href="javascript:location.reload()" class="refresh">Ingrese un nuevo numero de tarjeta</a>
-         </div>
-      </div>
-      </div>
-
-    </main>
-    <footer class="footer">
-      <h3>LUPITA'S BAKERY © 2020 All Rights Reserved. Desarrollado por Susana</h3>
-    </footer>
+      <footer class="footer">
+        <h3>LUPITA'S BAKERY © 2020 All Rights Reserved. Desarrollado por Susana</h3>
+      </footer>
     <script src="index.js" type="module"></script>
   </body>
 </html>
