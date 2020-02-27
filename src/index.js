@@ -6,28 +6,28 @@ const segunda = document.getElementById("two");
 const tercera = document.getElementById("three");
 const card1 = document.getElementById("visa");
 const card2 = document.getElementById("mastercard");
-segunda.style.display = 'none';
-tercera.style.display = 'none';
+segunda.classList.add('hide');
+tercera.classList.add('hide');
 const boton = document.getElementById("check1");
 boton.addEventListener("click",() => {
-  segunda.style.display = 'block';
-  primera.style.display = 'none';
-  tercera.style.display = 'none';
-  card1.style.display = 'block';
-  card2.style.display = 'none';
+  segunda.classList.remove('hide');
+  primera.classList.add('hide');
+  tercera.classList.add('hide');
+  card1.classList.remove('hide');
+  card2.classList.add('hide');
   })
 const boton2 = document.getElementById("check2");
 boton2.addEventListener("click",() => {
-  segunda.style.display = 'block';
-  primera.style.display = 'none';
-  tercera.style.display = 'none';
-  card2.style.display = 'block';
-  card1.style.display = 'none';
+  segunda.classList.remove('hide');
+  primera.classList.add('hide');
+  tercera.classList.add('hide');
+  card2.classList.remove('hide');
+  card1.classList.add('hide');
 })
 const boton3 = document.getElementById("check3");
 boton3.addEventListener("click",() => {
-  tercera.style.display = 'block';
-  segunda.style.display = 'none';
+  tercera.classList.remove('hide');
+  segunda.classList.add('hide');
 
     let creditCardNumber = document.getElementById("play").value;
     if(creditCardNumber!=""){
@@ -42,20 +42,20 @@ boton3.addEventListener("click",() => {
     cover.textContent=mask;
       if (output==true){
         score.textContent="VALID";
-        score.style.display='block';
-        valid.style.display='block';
-        invalid.style.display='none';
+        score.classList.remove('hide');
+        valid.classList.remove('hide');
+        invalid.classList.add('hide');
       }else{
         score.textContent="INVALID";
-        score.style.display='block';
-        invalid.style.display='block';
-        valid.style.display='none';
+        score.classList.remove('hide');
+        invalid.classList.remove('hide');
+        valid.classList.add('hide');
       }
     }else{
     alert("Por favor ingrese un número de tarjeta");
-     segunda.style.display = 'block';
-     primera.style.display = 'none';
-     tercera.style.display = 'none';
+     segunda.classList.remove('hide');
+     primera.classList.add('hide');
+     tercera.classList.add('hide');
     }
 
 })
