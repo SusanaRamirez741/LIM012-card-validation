@@ -22,7 +22,7 @@
     Se desarrolló una aplicación para una página web de un e-commerce,en este caso del rubro de repostería;
     por medio de la cual se puede verificar el medio de pago de los pedidos online y de esta manera registrar una venta exitosa para el negocio.
 
-  ![Imagen final del proyecto:](https://github.com/SusanaRamirez741/LIM012-card-validation/blob/master/src/images/proyecto-final.jpg)
+  ![Imagen final del proyecto:](https://github.com/SusanaRamirez741/LIM012-card-validation/blob/master/src/images/proyecto-final.JPG)
 
 
 ## 3. Objetivos de aprendizaje
