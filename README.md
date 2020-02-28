@@ -56,7 +56,7 @@
 
   ### Testing
 
-  * [x] [Testeo de tus funciones](https://jestjs.io/docs/es-ES/getting-started)
+  * [ ] [Testeo de tus funciones](https://jestjs.io/docs/es-ES/getting-started)
 
   ### Git y GitHub
 
@@ -66,7 +66,7 @@
 
   ### Buenas prácticas de desarrollo
 
-  * [ ] Organizar y dividir el código en módulos (Modularización).
+  * [x] Organizar y dividir el código en módulos (Modularización).
   * [x] Uso de identificadores descriptivos (Nomenclatura | Semántica).
   * [ ] Uso de linter para seguir buenas prácticas (ESLINT).
 
