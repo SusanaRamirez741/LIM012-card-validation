@@ -1,6 +1,5 @@
 body{
-  background-image: url("images/fondo.jpg");opacity:0.98;
-  background-size: contain;
+  background-color:rgb(250, 248, 239,0.1);
   text-align: center;
   margin: 0;
   padding:0;
@@ -176,7 +175,7 @@ a{
 #list1 a:hover{
   color:rgba(250, 248, 239);
   background:rgba(239, 112, 127);
-  border:1px solid rgba(68, 50, 31, 0.9);
+  border:1px solid rgb(139, 110, 80);
   text-decoration: none;
 }
 
@@ -216,6 +215,8 @@ a{
   flex-direction: row;
   margin:0.8em;
   padding:0.5em;
+  border: 1px solid rgba(239, 112, 127, 0.705);
+  border-radius: 10px;
   }
 
 .cake{
@@ -234,8 +235,8 @@ a{
   font-family: 'Roboto Slab' ;
   font-size: 12px;
   text-align: left;
-  border-style: solid;
   border: 1px solid rgba(239, 112, 127, 0.705);
+  border-radius: 10px;
   width:190px;
   height: 60px;
   display:flex;
@@ -254,6 +255,8 @@ a{
   flex-direction: row;
   margin:0.8em;
   padding:0.5em;
+  border: 1px solid rgba(239, 112, 127, 0.705);
+  border-radius: 10px;
   }
 
 .cupcake{
@@ -273,8 +276,8 @@ a{
   font-family: 'Roboto Slab' ;
   font-size: 12px;
   text-align: left;
-  border-style: solid;
   border: 1px solid rgba(239, 112, 127, 0.705);
+  border-radius: 10px;
   width:190px;
   height: 60px;
   display:flex;
@@ -293,6 +296,8 @@ a{
   flex-direction: row;
   margin:0.8em;
   padding:0.5em;
+  border: 1px solid rgba(239, 112, 127, 0.705);
+  border-radius: 10px;
   }
 
 .pop{
@@ -311,8 +316,8 @@ a{
   font-family: 'Roboto Slab' ;
   font-size: 12px;
   text-align: left;
-  border-style: solid;
   border: 1px solid rgba(239, 112, 127, 0.705);
+  border-radius: 10px;
   width:190px;
   height: 60px;
   display:flex;
@@ -323,6 +328,8 @@ a{
 .flex-container4{
   opacity:0.95;
   background-color: rgb(250, 248, 239);
+  border:1px solid rgba(239, 112, 127, 0.705);
+  border-radius: 10px;
   width: 80%;
   height:50px;
   display:flex;
@@ -338,8 +345,8 @@ a{
   font-family: 'Roboto Slab' ;
   font-size: 13px;
   text-align: center;
-  border-style: solid;
   border: 1px solid rgba(239, 112, 127, 0.705);
+  border-radius: 10px;
   width:190px;
   height: 40px;
   display:flex;
@@ -354,6 +361,7 @@ a{
   text-align: center;
   border-style: solid;
   border: 1px solid rgba(239, 112, 127, 0.705);
+  border-radius: 10px;
   width:190px;
   height: 40px;
   display:flex;
